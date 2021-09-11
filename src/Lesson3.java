@@ -56,6 +56,28 @@ public class Lesson3 {
 
         printArray(fillArray(5,1));
 
+
+        System.out.println("задание 6");
+
+        int [] fifthArray = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 0};
+        int min, max;
+
+        min = fifthArray[0];
+        max = fifthArray[0];
+
+        printArray(fifthArray);
+
+        for (int i = 0; i < fifthArray.length; i++) {
+            if (fifthArray[i] < min) {
+                min = fifthArray[i];
+            }
+            if (fifthArray[i] > max) {
+                max = fifthArray[i];
+            }
+        }
+
+        System.out.println("Минимальный элемент: " + min);
+        System.out.println("Максимальный элемент: " + max);
     }
 
     public static int [] fillArray(int len, int initialValue){
